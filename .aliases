@@ -1,0 +1,38 @@
+#! /usr/bin/sh
+
+alias joplin='joplin-desktop'
+alias libreoffice='libreoffice --nologo'
+alias writer='libreoffice --nologo --writer &!'
+alias calc='libreoffice --nologo --calc &!'
+alias impress='libreoffice --nologo --impress &!'
+alias ee="nvim"
+alias bt='bluetoothctl'
+alias bgd='bg; disown'
+alias nnn='nnn -e'
+alias ssh='kitty +kitten ssh'
+# alias lg='lazygit'
+# alias pvpn='protonvpn-cli'
+alias tmpd='cd $(mktemp -d)'
+alias instagram="brave --profile-directory='Profile 3' --app='https://www.instagram.com' &!"
+alias whatsapp="brave --profile-directory='Profile 4' --app='https://web.whatsapp.com' &!"
+alias spotify="brave --profile-directory='Profile 5' --app='https://open.spotify.com' &!"
+alias discord="brave --profile-directory='Profile 6' --app='https://discord.com' &!"
+
+# Common aliases
+alias ls='ls --color=tty'
+alias l='ls -lFh'
+alias la='ls -lAFh'
+alias lt='ls -ltFh'
+alias ldot='ls -ld .*'
+alias zshrc='${=EDITOR} ${ZDOTDIR:-$HOME}/.zshrc'
+alias grep='grep --color'
+alias rm='echo "Do not use rm. Use trash instead"; false'
+alias cp='cp -iv'
+alias mv='mv -iv'
+
+# Paru aliases
+alias prrem='paru -Rnsu'
+alias upall='paru -Syu'
+
+# Dotfile management
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

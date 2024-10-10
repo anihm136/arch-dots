@@ -1,0 +1,50 @@
+super + b
+  firefox
+
+super + F9
+  mnt
+
+super + F10
+  umt
+
+super + BackSpace
+  rofi -modi "power-menu:rofi-power-menu" -show power-menu -theme "themes/powermenu"
+
+super + f
+  thunar
+
+super + Return
+  kitty || uxterm
+
+super + c
+  galculator
+
+super + shift + x
+  loginctl lock-session
+
+Menu
+  rofi -modi run,drun -show drun -show-icons -display-run "Launch" -display-drun "Launch"
+
+alt + Tab
+  rofiwindow
+
+XF86AudioNext
+  playerctl next
+
+XF86AudioPrev
+  playerctl previous
+
+XF86AudioPlay
+  playerctl play-pause
+
+XF86AudioRaiseVolume
+  vol up
+
+XF86AudioLowerVolume
+  vol down
+
+XF86AudioMute
+  vol toggle
+
+Print
+  flameshot gui
