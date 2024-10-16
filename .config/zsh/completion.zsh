@@ -47,6 +47,10 @@ zi light z-shell/null
 # AWS CLI
 complete -C '/sbin/aws_completer' aws
 
+# Pip
+zi ice wait lucid as"completion"
+zi snippet OMZP::pip/_pip
+
 # FZF
 zi ice wait lucid
 zi snippet "https://github.com/junegunn/fzf/blob/master/shell/completion.zsh"

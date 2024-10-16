@@ -4,6 +4,8 @@
 
 (doom! :completion
        (corfu
+        +icons
+        +dabbrev
         +orderless)
        (vertico
         +icons)

@@ -20,12 +20,8 @@ export MYSQL_HISTFILE="$XDG_STATE_HOME"/mysql_history
 export LESSHISTFILE="$XDG_STATE_HOME"/less_history
 # GTK
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/.gtkrc-2.0"
-# Antibody
-export ANTIBODY_HOME="$XDG_DATA_HOME/antibody"
 # Ripgrep
 export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep/ripgreprc"
-# NPM
-export NPM_CONFIG_PREFIX="$HOME/dev/node"
 # ASDF
 export ASDF_DIR="/opt/asdf-vm"
 export ASDF_CONFIG_FILE="$XDG_CONFIG_HOME/asdf/asdfrc"
@@ -47,5 +43,5 @@ export TEXMFVAR="$XDG_CACHE_HOME"/texlive/texmf-var
 export SQLITE_HISTORY="$XDG_STATE_HOME"/sqlite_history
 # Jupyter
 export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
-# CUDA
-export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+# pnpm
+export PNPM_HOME="$XDG_DATA_HOME"/pnpm
