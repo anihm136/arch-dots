@@ -291,6 +291,18 @@
 
 (load! "+engrave-faces")
 
+(use-package! corfu
+  :defer t
+  :config
+  (setq
+   corfu-auto 'nil))
+
+(use-package! orderless
+  :defer t
+  :config
+  (setq
+   orderless-smart-case 'nil))
+
 (add-hook! 'prog-mode-hook (lambda ()(modify-syntax-entry ?_ "w")))
 
 (add-hook! 'after-init-hook 'ani/my-init-func)
