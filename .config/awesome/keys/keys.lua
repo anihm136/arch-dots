@@ -187,8 +187,8 @@ keys.globalkeys = my_table.join(
 		group = "awesome",
 	}),
 	-- Toggle notifications
-	awful.key({ modkey, "Shift" }, "n", function()
-		naughty.destroy_all_notifications()
+	awful.key({ modkey, altkey }, "n", function()
+		naughty.destroy_all_notifications(nil, 1000)
 		naughty.notification({
 			title = "Info",
 			message = (naughty.suspended and "Resuming" or "Suspending") .. " notifications",
@@ -201,7 +201,7 @@ keys.globalkeys = my_table.join(
 	}),
 	-- Dismiss all notifications
 	awful.key({ modkey, ctrl }, "n", function()
-		naughty.destroy_all_notifications()
+		naughty.destroy_all_notifications(nil, 1000)
 	end, {
 		description = "dismiss notifications",
 		group = "awesome",

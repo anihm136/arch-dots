@@ -67,6 +67,7 @@ function rules.create(clientkeys, clientbuttons)
 					"thunderbird",
 					"discord",
 					"Slack",
+					"Signal",
 					"Element",
 					"TelegramDesktop",
 					"Zulip",
