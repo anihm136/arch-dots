@@ -7,10 +7,10 @@ path+=("$XDG_CONFIG_HOME/emacs/bin")
 path+=("$GOPATH/bin")
 path+=("$PNPM_HOME")
 
-path+=("$HOME/.cargo/bin")
-
-# Settings
-export SUDO_ASKPASS="$HOME/.local/bin/scripts/askpass"
-# export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR"/gcr/ssh
+brewprefix=/opt/homebrew
+path+=("$brewprefix/bin:$brewprefix/sbin:$PATH")
+source "$brewprefix/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+export MANPATH="$brewprefix/share/man:$MANPATH"
+unset brewprefix
 
 export PATH

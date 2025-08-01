@@ -1,4 +1,6 @@
 autoload -Uz bashcompinit && bashcompinit
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 # Pipx
 zi ice id-as"pipx_completion" has"pipx" \
