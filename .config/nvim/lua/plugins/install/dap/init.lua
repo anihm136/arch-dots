@@ -1,6 +1,6 @@
 return {
 	"mfussenegger/nvim-dap",
-	event = "VeryLazy",
+	cmd = {"DapNew", "DapContinue"},
 	dependencies = {
 		require("plugins.install.dap.nvim-dap-python"),
 		require("plugins.install.dap.nvim-dap-go"),

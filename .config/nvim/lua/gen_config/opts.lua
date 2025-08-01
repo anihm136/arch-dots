@@ -24,7 +24,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Side columns
-vim.opt.signcolumn = "auto:2-9"
+vim.opt.signcolumn = "number"
 vim.opt.number = true
 vim.opt.relativenumber = true
 
