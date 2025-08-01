@@ -1,7 +1,0 @@
-configuration {
-	matching: "fuzzy";
-	tokenize: true;
-	sort: true;
-	sorting-method: "fzf";
-}
-@theme "themes/default"
