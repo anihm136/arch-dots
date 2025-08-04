@@ -7,10 +7,6 @@ path+=("$XDG_CONFIG_HOME/emacs/bin")
 path+=("$GOPATH/bin")
 path+=("$PNPM_HOME")
 
-brewprefix=/opt/homebrew
-path+=("$brewprefix/bin:$brewprefix/sbin:$PATH")
-source "$brewprefix/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-export MANPATH="$brewprefix/share/man:$MANPATH"
-unset brewprefix
+path+=("/usr/lib/cargo/bin/")
 
 export PATH

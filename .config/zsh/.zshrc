@@ -1,9 +1,9 @@
 # zmodload zsh/zprof
-module_path+=( "$HOME/.local/share/zi/zmodules/zpmod/Src" )
-zmodload zi/zpmod
+# module_path+=( "$HOME/.local/share/zi/zmodules/zpmod/Src" )
+# zmodload zi/zpmod
 
 # Plugin framework
-source $ZDOTDIR/zi.sh
+# source $ZDOTDIR/zi.sh
 
 # Source files from config dirs and files
 for f in $ZDOTDIR/zshrc.d/**/*.zsh(N); do [ -r "$f" ] && source "$f"; done
