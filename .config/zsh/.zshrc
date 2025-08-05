@@ -1,6 +1,6 @@
 # zmodload zsh/zprof
-# module_path+=( "$HOME/.local/share/zi/zmodules/zpmod/Src" )
-# zmodload zi/zpmod
+module_path+=( "${ZI[HOME_DIR]}/zmodules/zpmod/Src" )
+zmodload zi/zpmod
 
 # Plugin framework
 # source $ZDOTDIR/zi.sh

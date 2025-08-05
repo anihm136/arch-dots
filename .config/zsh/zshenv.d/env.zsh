@@ -7,6 +7,6 @@ path+=("$XDG_CONFIG_HOME/emacs/bin")
 path+=("$GOPATH/bin")
 path+=("$PNPM_HOME")
 
-path+=("/usr/lib/cargo/bin/")
+path+=("/usr/lib/cargo/bin")
 
 export PATH
