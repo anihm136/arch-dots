@@ -25,3 +25,7 @@ alias mv='mv -iv'
 
 # Dotfile management
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Gemini CLI
+# alias gemini='npx @google/gemini-cli'
+alias gemini='/google/bin/releases/gemini-cli/tools/gemini'
