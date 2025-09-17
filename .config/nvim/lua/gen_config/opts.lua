@@ -39,3 +39,6 @@ vim.opt.cursorline = true
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 vim.opt.timeoutlen = 300
 vim.opt.linebreak = true
+
+-- Clipboard
+vim.g.clipboard = 'osc52'
