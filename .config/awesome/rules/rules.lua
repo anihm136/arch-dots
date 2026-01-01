@@ -51,7 +51,7 @@ function rules.create(clientkeys, clientbuttons)
 			},
 			properties = {
 				screen = 1,
-				tag = screen[1].tags[3],
+				tag = screen[1].tags[4],
 			},
 		},
 		{
@@ -74,24 +74,29 @@ function rules.create(clientkeys, clientbuttons)
 				},
 			},
 			properties = {
-				screen = 2,
-				tag = screen[2].tags[3],
+				screen = 1,
+				tag = screen[1].tags[7],
+			},
+		},
+		{
+			rule_any = {
+				instance = { "www.instagram.com", "web.whatsapp.com", "discord.com" },
+			},
+			properties = {
+				screen = 1,
+				tag = screen[1].tags[7],
+				floating = false,
 			},
 		},
 		{
 			rule_any = {
 				class = { "Spotify" },
+				instance = { "open.spotify.com" },
 			},
-			properties = {
-				screen = 2,
-				tag = screen[2].tags[4],
-			},
-		},
-		{
-			rule = { class = "Emacs" },
 			properties = {
 				screen = 1,
-				tag = screen[1].tags[5],
+				tag = screen[1].tags[6],
+				floating = false,
 			},
 		},
 		{
@@ -99,9 +104,7 @@ function rules.create(clientkeys, clientbuttons)
 			rule_any = {
 				instance = { "DTA", "copyq" },
 				class = {
-					"Nm-connection-editor",
 					"Galculator",
-					"Blueberry.py",
 					"Tk",
 				},
 				name = {
@@ -135,30 +138,9 @@ function rules.create(clientkeys, clientbuttons)
 			},
 		},
 		{
-			rule_any = {
-				instance = { "www.instagram.com", "web.whatsapp.com", "discord.com" },
-			},
-			properties = {
-				screen = 2,
-				tag = screen[2].tags[3],
-				floating = false,
-			},
-		},
-		{
-			rule_any = {
-				class = { "Spotify" },
-				instance = { "open.spotify.com" },
-			},
-			properties = {
-				screen = 2,
-				tag = screen[2].tags[4],
-				floating = false,
-			},
-		},
-		{
 			-- Pavucontrol & Bluetooth Devices
 			rule_any = {
-				class = { "Pavucontrol" },
+				class = { "Pavucontrol", "pwvucontrol" },
 				name = { "Bluetooth Devices" },
 			},
 			properties = {

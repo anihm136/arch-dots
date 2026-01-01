@@ -15,7 +15,7 @@
   spacing: 0;
   background-color: transparent;
   lines:5;
-  font: "Kimberley Bl 15";
+  font: "Kimberley Bl 18";
   text-color: @text-alt;
 }
 

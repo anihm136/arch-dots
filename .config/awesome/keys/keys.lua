@@ -481,7 +481,7 @@ keys.clientkeys = gears.table.join(
 )
 
 -- Bind all key numbers to tags
-for i = 1, 6 do
+for i = 1, 7 do
 	keys.globalkeys = gears.table.join(
 		keys.globalkeys,
 		-- Switch to tag

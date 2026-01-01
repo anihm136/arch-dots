@@ -69,7 +69,8 @@ function theme.at_screen_connect(s)
 		end
 	end
 
-	require(string.format("theme/screen_%d", s.index)).at_screen_connect(s)
+	-- require(string.format("theme/screen_%d", s.index)).at_screen_connect(s)
+	require("theme/screen_1").at_screen_connect(s)
 end
 
 return theme

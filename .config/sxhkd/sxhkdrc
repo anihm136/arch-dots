@@ -22,8 +22,11 @@ super + c
 super + shift + x
   loginctl lock-session
 
-Menu
+super + Escape
   rofi -modi run,drun -show drun -show-icons -display-run "Launch" -display-drun "Launch"
+  
+# Menu
+#   rofi -modi run,drun -show drun -show-icons -display-run "Launch" -display-drun "Launch"
 
 alt + Tab
   rofiwindow
@@ -38,13 +41,22 @@ XF86AudioPlay
   playerctl play-pause
 
 XF86AudioRaiseVolume
-  vol up
+  wpctl set-volume -l 1.2 @DEFAULT_AUDIO_SINK@ 5%+
 
 XF86AudioLowerVolume
-  vol down
+  wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 
 XF86AudioMute
-  vol toggle
+  wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+XF86AudioMicMute
+  wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+
+XF86MonBrightnessUp
+  brightnessctl -q -d intel_backlight set +5%
+
+XF86MonBrightnessDown
+  brightnessctl -q -d intel_backlight set 5%-
 
 Print
   flameshot gui

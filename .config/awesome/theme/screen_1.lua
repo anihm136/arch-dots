@@ -8,7 +8,7 @@ local deepcopy = require("utils").deepcopy
 local screen_theme = deepcopy(require("beautiful").get())
 screen_theme.font = "Inter 14"
 screen_theme.taglist_font = "Inter Black 12"
-screen_theme.menu_height = dpi(35)
+screen_theme.menu_height = dpi(40)
 screen_theme.menu_width = dpi(250)
 screen_theme.taglist_squares_sel = screen_theme.dir .. "/icons/square_unsel.png"
 screen_theme.taglist_squares_unsel = screen_theme.dir .. "/icons/square_unsel.png"
@@ -55,7 +55,7 @@ screen_theme.fs = lain.widget.fs({
 	notification_preset = {
 		fg = screen_theme.fg_normal,
 		bg = screen_theme.bg_normal,
-		font = "Overpass Mono 10.5",
+		font = "Overpass Mono 11",
 		title = "Storage overview",
 		width = 0,
 	},
@@ -92,7 +92,7 @@ end)
 
 function screen_theme.at_screen_connect(s)
 	-- Tags
-	local tagnames = { "WS1_1", "WS1_2", "WWW", "MEDIA", "EMACS", "E1" }
+	local tagnames = { "WS_1", "WS_2", "WS_3", "WWW", "EMACS", "MEDIA", "SOCIAL" }
 	for i, tag in pairs(tagnames) do
 		awful.tag.add(tag, {
 			layout = awful.layout.layouts[1],

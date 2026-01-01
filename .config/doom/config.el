@@ -3,8 +3,8 @@
 (setq user-full-name "Anirudh H M"
       user-mail-address "anihm136@gmail.com")
 
-(setq doom-font (font-spec :family "Iosevka Nerd Font Mono" :size 16)
-      doom-variable-pitch-font (font-spec :family "Overpass" :weight 'normal :size 16))
+(setq doom-font (font-spec :family "Iosevka Nerd Font Mono" :size 20)
+      doom-variable-pitch-font (font-spec :family "Overpass" :weight 'normal :size 20))
 
 (setq display-line-numbers-type 'relative)
 
