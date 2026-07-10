@@ -1,4 +1,6 @@
 # Path additions
+PATH="$ASDF_DATA_DIR/shims":$PATH
+
 if [ -d "$HOME/.local/bin" ] ; then
 	path+=("$HOME/.local/bin")
 	path+=("$HOME/.local/bin/scripts")
